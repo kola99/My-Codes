@@ -1,0 +1,47 @@
+/*package whatever //do not write package name here */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class GFG {
+	public static void main (String[] args) {
+		//code
+		
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		
+		while(t-->0)
+		{
+		    int n=sc.nextInt();
+		    int a[]=new int[n];
+		    for(int i=0;i<n;i++)
+		    a[i]=sc.nextInt();
+		    int gsum=a[0];int csum=a[0];
+		    
+		    for(int i=1;i<n;i++)
+		    {
+		        csum=Math.max(csum+a[i],a[i]);
+		        if(gsum<csum)
+		        gsum=csum;
+		        
+		      
+		        
+		        
+		    }
+		    System.out.println(gsum);
+		    
+		    
+		    
+		    
+		    
+		    
+		}
+		
+		
+		//csum holds in each step the max ending at an index i
+		//gsum just a simple variable to contain the max at each step
+		
+		
+	}
+}
