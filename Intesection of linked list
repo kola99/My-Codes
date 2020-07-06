@@ -1,4 +1,5 @@
 
 Approach one -if numbers are all positive then mul one list by -1 then search for negative number in it...
 this fails for 0 case or if there are strings in linked list...
-Approach 2-
+Approach 2-consider length of list 1 as n and list 2 as m then we take the diff of these length then traverse
+that much in first list...after that start traversing in both list from that place till the pointer address becomes wsame that is p==q
