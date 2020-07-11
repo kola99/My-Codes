@@ -1,2 +1,41 @@
 
-spiral order traversal of a tree!!
+spiral order traversal of a tree!! with two stacks
+void printSpiral(Node node) 
+      {
+           // Your code here
+           if(node==null)return;
+           
+     Stack<Node> st1=new Stack<>();
+     Stack<Node> st2=new Stack<>();
+     st1.push(node);int count=1;st2.push(node);
+     while((st1.size()>0||st2.size()>0))
+     {if(count==1)st2.pop();
+         
+         count=2;
+        while(st1.size()>0)
+        {
+            
+            Node t=st1.pop();if(t!=null)
+            System.out.print(t.data+" ");
+            if(t.right!=null)
+            st2.push(t.right);
+            if(t.left!=null)st2.push(t.left);
+            
+            
+            
+        }
+         while(st2.size()>0)
+         {
+             
+             Node t=st2.pop();if(t!=null)System.out.print(t.data+" ");
+             if(t.left!=null)
+            st1.push(t.left);if(t.right!=null)st1.push(t.right);
+             
+             
+         }
+         
+     }
+           
+           
+           
+      }
