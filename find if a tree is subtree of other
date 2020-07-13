@@ -1,0 +1,32 @@
+Find if subtee hai...
+O(mn)approach--
+
+
+boolen subtree(Node t,Node s)
+{
+if(t==null)return true;
+if(s==null)return false;
+if(identical(t,s))return true;
+return subtree(t.left,s)||subtree(t.right,s);
+
+
+
+
+}
+
+boolean isidentical(Node t,Node s)
+{
+
+if(t&&s==null)return true;
+if(t&&s!=null)reuturn false;
+
+if(t.data==s.data)
+return identical(t.left,s,lefft)&&identical(t.right,s.right);
+return false;
+
+
+
+
+}
+ye toh mahngi approach thi.....
+now coming back to an O(n )approach
