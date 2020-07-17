@@ -1,0 +1,9 @@
+Appraoch of nlog n is by sorting and picking up the middle elements
+
+Appraoch of O(n) --
+using frequencey array--
+Make a frequency array add elements to them ---
+
+after adding freq we just traverse the array to find the difference in the adjacent elements and then return the minimum of that also 0 must be returned in 
+case of any element having frequency greater than 1
+
