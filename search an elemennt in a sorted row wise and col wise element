@@ -1,0 +1,16 @@
+Search for an element in a row wise and col wise sorted matrix--
+start from right hand elemnt ---
+if(found)return ;
+if(element >x the no. to search)
+move move left;
+if(element<x)
+move down
+else if(boundary reached )
+end;
+
+example--
+10 20 30 40
+15 25 35 45 
+27 29 37 48
+32 33 39 50
+ 
