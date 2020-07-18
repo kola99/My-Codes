@@ -1,0 +1,24 @@
+#
+O(n)
+wala approach toh easy hai
+O(log n)
+isme ek array mein numbers hain from 1 to n-1 witth one missing u have to find that missing one--
+for numbers before that num arr[i]-i=1;
+for numbers after that number arr[i]-i=2;
+
+
+int a=0;
+int b=n-1;
+int m=(l+u)/2;
+
+ while ((b - a) > 1) 
+    { 
+        mid = (a + b) / 2; 
+        if ((ar[a] - a) != (ar[mid] - mid)) 
+            b = mid; 
+        else if ((ar[b] - b) != (ar[mid] - mid)) 
+            a = mid; 
+    } 
+    return (ar[mid] + 1); 
+
+return l+1;
