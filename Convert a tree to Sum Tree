@@ -1,0 +1,19 @@
+Convert a tree to sum tree--
+matlab ek node ki value will be equal to sum of left and right sub tree--
+recursive soln--
+
+funct(Node node)
+{
+if(node==null)
+return 0;
+int old data=node.data;
+node.data=funct(node.left)+funct(node.right);
+
+return node.data+old data;
+
+
+
+
+
+}
+
