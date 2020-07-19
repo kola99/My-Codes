@@ -1,0 +1,14 @@
+in an array find next greater elemnt in it...
+brute fornce order n sq
+using stack O(n)
+ push onto stack the first elem
+ compare the next elem wiht the tos
+ if tos is greater thatn ele then push else
+ keep popping till it becomes empty or greater than that
+ then push this ele
+ pop walo k liye ans is this ele
+ 
+ 
+ end mein if stack is empty good else keep popping and printing -1
+
+
