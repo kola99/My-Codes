@@ -1,0 +1,11 @@
+best approach
+find  median of arr1 and arr2
+then the median would lie on say 
+arr1=xMy
+arr2=fMg
+then if m1=m2 then return m2
+else
+if m1>m2
+then median in x and g
+if m2>m1 then median in y and f
+recursive approach lagao till it becomes 2 elements in each set
