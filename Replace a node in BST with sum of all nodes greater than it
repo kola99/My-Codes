@@ -1,1 +1,22 @@
+Given a BST, modify it so that all greater values in the given BST are added to every node.this was asked without using a static or global member
 
+yha pr we do reverse inorder traversal RNL
+
+modify(Node root,int sum)
+{
+
+if(root==null)return null;
+
+ mdify(root.right,sum);
+ sum+=root.data;
+ root.data=sum;
+ 
+ modify(root.left,sum);
+
+ 
+
+
+
+
+
+}
