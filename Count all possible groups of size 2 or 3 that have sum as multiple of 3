@@ -1,0 +1,20 @@
+Count all possible groups of size 2 or 3 that have sum as multiple of 3---\
+use some modulus wala jugad---
+find remainder of each element with 3
+
+
+matlabd
+ rem[0],rem[1],rem[2]
+ 
+ then for 2 elements
+ either both from rem[0]
+ either one from rem[1]and one from rem[2]
+ 
+ 
+ then for 3 elements
+ 
+ --
+all three from rem[0]
+all three from rem[1]
+one from each group
+ ye sabse accha approach hai ...
