@@ -1,0 +1,31 @@
+2 condditions --
+either the diameter passes through the root or not
+
+int diam(Node root)
+{
+  if(root==null)return 0;
+  int lheight(root.left);
+  int rheight(root.right);
+  int ld=diam(rooot.left);
+  int rd=diam(root.right);
+  
+  return Math.max(lheight+rheight+1,Math.max(ld,rd));
+  
+
+
+}
+
+int height(Node root)
+{
+if(root==null)return 0;
+ht(left);
+ht(right);
+return Math.max(left,right)+1;
+
+
+
+
+
+
+
+}
