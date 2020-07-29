@@ -1,0 +1,15 @@
+Next greater element with the same set of digits--
+ example--218765
+           251678
+           
+           
+           --right se shuru kro find the digit joki apne aage wale se apne next wale se chota ho
+           --phir us digit k baad se shuru kro and find the next smaller digit to this digit 
+           --phir exchange these 2
+           --sort the entire digits after theat digit then
+           
+           eg-1
+           then 258761
+           then
+           sort after 5 
+           251678
