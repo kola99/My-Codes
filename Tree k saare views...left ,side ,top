@@ -1,0 +1,16 @@
+Left view of a tree-ek tarika do level order and print the first element of each level...
+int max=-1;
+
+Recursive solution
+left(Node root,int level)
+{
+
+if(root==null)return;
+ if(l>max)
+   {
+   max=l;Sopln(root.data);
+   }   
+ left(root.left,l+1);
+ left(root.right,l+1);
+
+}
