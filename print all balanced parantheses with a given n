@@ -1,0 +1,37 @@
+Method- using recursion
+
+
+2 cases aris-
+we can add a { if count of { is <n
+we can add a } if count of } is <count of >
+yha since backtracking jaisa concept lagega so u should use a char array
+
+print(count )
+{
+if(count==n)
+print krdo array
+
+else
+{ if(count { < n)
+{char[pos]=};
+print(count{+1,char[],pos+1,count {);}
+
+  if(count }>count {)
+  {char [pos]=};
+  print(count }+1,count {.char,pos+1);
+  }}
+  return;
+  
+  
+  
+  }
+
+
+
+}
+
+
+
+
+
+}
