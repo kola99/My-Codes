@@ -1,0 +1,17 @@
+To find a triplet with a given sum--
+ O(n^3)approach
+ trivial hai three loops run karo-then har loop mein add krte jao and compare
+ 
+ best appraoch 
+ order n time and order 1 space
+ 
+ 
+ 
+ first sort the array-
+ iske liye run outer loop then
+ take 2 pointer ek aage se array k ek peeche se array k
+ then add a[current]and a[i]and a[j],i j pointer honge i=current+1;j=arraysize-1;
+ 
+ if sum of above three less than k
+ i++;
+ else j++;
