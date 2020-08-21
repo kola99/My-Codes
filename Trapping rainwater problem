@@ -1,0 +1,39 @@
+Trapping rainwater problem
+
+ek appoach make two arrays and take the min of the 2 arrays minus the value at that index har bar k liye
+main isme ye hai ki ek interval mein ya bar mein kitan water store hoga wo uske left aur right side jo global maxima honge unpr depend hoga
+so ab isme karna kya hai...
+ye sol linear space le rha
+
+
+so ek 2 pointer approach hai...ye use krte hai--
+
+isme har time pr ye nikal jaega 2 ppointer wali location pr kitta paani aa sakta hai 
+so--
+lmax=arr[0];rmax=arr[1];
+lo=1;hi=n-1;corner case hai ki number of bars 3 se badhi honi chiye
+while(lo<=hi)
+{
+if(lmax>=arr[lo])
+{
+ if(rmax>lmax)
+ ans+=lmax-arr[lo];
+ else
+ lmax=
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
