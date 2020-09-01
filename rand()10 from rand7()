@@ -1,0 +1,10 @@
+so yha we use two variables v1,v2
+
+v1=rand();  1 2 3 4 5 6 7  neglesct 6 and 7
+v2=rand(); 1 2 3  4 5 6 7  neglect 7
+
+
+so we divide v2 into 1 2 3 and 4 5 6
+
+corresponidn to 1 2 3 we print v1 that is 1 to 5 
+and correspog to v2=4 5 6 we print v1+5 that is 6 7 8 9 10
