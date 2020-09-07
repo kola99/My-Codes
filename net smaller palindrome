@@ -1,0 +1,13 @@
+three cases--
+1.
+when all 9999 there 
+2.
+when is a pallindrome
+3.
+when not a pallindrome
+copy from left side to right if left digtit is greater than right side digit 
+else
+add one to the middle and propagate carrry
+
+yha in sec case if the value if like less than right side then 
+add one propaagate carry till that digit then copy the rest of left side as it is..
