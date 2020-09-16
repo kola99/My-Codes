@@ -1,0 +1,31 @@
+int ssum(TreeNode node) 
+    { 
+
+        // Base Case 
+        if (node == null) 
+            return -2000; 
+
+        // l and r store maximum path sum going through left and 
+        // right child of root respectively 
+        int l = ssum(node.left); 
+        int r = ssum(node.right); 
+
+        // Max path for parent call of root. This path must 
+        // include at-most one child of root 
+        int max_single = Math.max(Math.max(l, r) + node.val, 
+                                node.val); 
+
+
+        // Max Top represents the sum when the Node under 
+        // consideration is the root of the maxsum path and no 
+        // ancestors of root are there in max sum path 
+        int max_top = Math.max(max_single, l + r + node.val); 
+
+        // Store the Maximum Result. 
+        res = Math.max(res, max_top); 
+        
+       
+
+        return Math.max(node.val,Math.max(node.val+l,node.val+r));
+    } 
+    
