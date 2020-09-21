@@ -1,0 +1,52 @@
+Ques-finding maximum product of a subarray
+
+A kadane use hoga thoda modified form mein 
+yha 3 case hote hai
+a[i]>0
+a[i]=0;
+a[i]<0
+
+
+maxproduct(int a[])
+{
+int max=1;int min=1;
+int temp=0;
+for(int i=0;i<n;i++)
+{
+
+if(a[i]>0)
+{ 
+max=max*a[i];
+min=Math.min(1,min*a[i]);
+  
+}
+
+if(a[i]==0)
+{
+max=0;min=1;
+
+}
+
+if(a[i]<0)
+{
+temp=max;
+max=Math,max(max*a[i],1);
+min=temp*a[i];
+
+
+}
+ans=Math.max(ans,max);
+
+if(max==0)
+max=1;
+
+
+}
+
+
+
+
+
+
+
+}
