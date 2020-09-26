@@ -1,0 +1,3 @@
+Approach-
+Copy the next ptr data to this node and move on till end...
+Note this approach does not work for the last node of the linked list..
