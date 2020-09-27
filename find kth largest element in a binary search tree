@@ -1,0 +1,37 @@
+Finding kth largest element in a bst..
+Approach-ek approach is to maintain the number of left nodes for each node then compare with that data...
+but this method requires an extra variable introduction
+
+
+A new method -
+No extra variable +O(height +k)timing
+
+
+yha approach is to do reverse inorder traversal and maintain count...print when count==k
+Reverse inorder-->RNL
+
+
+void kthLargestUtil(Node node, int k, count C) 
+	{ 
+		// Base cases, the second condition is important to 
+		// avoid unnecessary recursive calls 
+		if (node == null || C.c >= k) 
+			return; 
+		
+		// Follow reverse inorder traversal so that the 
+		// largest element is visited first 
+		this.kthLargestUtil(node.right, k, C); 
+		
+		// Increment count of visited nodes 
+		C.c++; 
+		
+		// If c becomes k now, then this is the k'th largest 
+		if (C.c == k) { 
+			System.out.println(k + "th largest element is " + 
+												node.data); 
+			return; 
+		} 
+		
+		// Recur for left subtree 
+		this.kthLargestUtil(node.left, k, C); 
+	} 
