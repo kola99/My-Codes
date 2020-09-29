@@ -1,0 +1,20 @@
+Finding mirror image in a binary tree
+
+sabse easy solution
+
+public void mirror(Node node)
+{
+ if(node==null)return;
+ 
+ Node temp=node.left;
+ node.left=node.right;    //////swapping of nodes
+ node.right=temp;
+ 
+ mirror(node.left); ////calls
+ mirror(node.right);
+
+
+
+
+
+}
