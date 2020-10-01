@@ -1,0 +1,26 @@
+The most feasible sort is merge sort which has performance of order nlogn
+
+void mergesort(Node h)
+{
+  if(h==null)
+  return ;
+  
+  Node middle=mid(h);//find this in another fuction using fast and slow pointer technique
+  Node nextmiddle=middle.next;
+  middle.next=null;
+  
+  mergesort(middle);
+  mergesort(nextmiddle);
+  
+  Node ans=merge(middle,nextmiddle);
+  return ans;
+}
+
+void merge(Node a,Node b)
+{
+
+complete this functon as in merge of array
+
+
+
+}
