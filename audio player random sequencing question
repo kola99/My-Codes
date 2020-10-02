@@ -1,0 +1,17 @@
+There is a audio player given which picks up a random song from the playlist and plays it.The song should not be repeated until all songs are played atleast once.
+The sequence number of the songs are given in an array.Design such audio player without using any extra space.
+
+here the main thing is that randomistaion must be done with equal probabiliy to get selected to play...
+
+so yha random function ko aise define krenge--
+
+randomshuffle(int i,int j)//random shuffling from index i to j
+{
+if(i==j)return;
+int k=Math.rand();
+swapa[k]and a[i];
+randomshuffle(i+1,j);
+}
+
+Now iske baad do a sequential playing of songs till u reach the end of the array;
+
