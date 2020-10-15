@@ -1,0 +1,21 @@
+Maximum average in n ary tree-
+
+
+Code-Recursive
+
+public void avg(Node root,int max)
+{
+if(root.childeren.size()==0)
+return root.value;
+int sum=0;
+for(Node cc:root.childern)
+{sum+=avg(cc,max);count++;
+}
+
+avg=sum/count;
+max=Math.max(max,avg);
+return max;
+
+
+
+}
