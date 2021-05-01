@@ -1,0 +1,8 @@
+Look for inconsistency: Ideally, the difference between any element and its index must be arr[0] for every element.
+Find middle element and check if it’s consistent.
+If middle element is consistent, then check if the difference between middle element and its next element is greater than 1 i.e. check if arr[mid + 1] – arr[mid] > 1
+If yes, then arr[mid] + 1 is the missing element.
+If not, then we have to scan the right half array from the middle element and jump to step-1.
+If middle element is inconsistent, then check if the difference between middle element and its previous element is greater than 1 i.e. check if arr[mid] – arr[mid – 1] > 1
+If yes, then arr[mid] – 1 is the missing element.
+If not, then we have to scan the left half array from the middle element and jump to step-1.
